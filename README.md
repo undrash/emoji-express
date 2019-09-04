@@ -1,13 +1,13 @@
 
-# Emojify your API!
+# Emojify your API! 👍
 
   
 
- Slashemoji adds emoji support to your [express](http://expressjs.com/) website's URLs.
+ Slashemoji adds emoji support to your [express](http://expressjs.com/) website's URLs. 😇
 
 
   <br>
-  <br>
+
 
 ```js
 const express = require('express')
