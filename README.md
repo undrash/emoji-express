@@ -1,10 +1,37 @@
 
 # Emojify your API!
 
-  Slashemoji adds emoji support to your website's URLs.
+  
+
+ Slashemoji adds emoji support to your [express](http://expressjs.com/) website's URLs.
+
 
   <br>
   <br>
+
+```js
+const express = require('express')
+const app = express()
+
+const emoji = require('slashemoji')
+
+emoji.init( app )
+
+app.get('/contact', function (req, res) {
+  res.send('This is your contact page.')
+})
+
+app.listen(3000)
+```
+
+## Installation
+
+Installation is done using the
+[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+
+```bash
+$ npm install express
+```
 
 
   brought you by
