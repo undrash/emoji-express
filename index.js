@@ -18,4 +18,7 @@ module.exports.init = (app) => {
     // 🙋‍♀️
     app.get( "/%F0%9F%99%8B%E2%80%8D%E2%99%80%EF%B8%8F", (req, res) => { req.url = "/about"; app.handle( req, res ); } );
 
+    // 📜
+    app.get( "/%%F0%9F%93%9C", (req, res) => { req.url = "/about"; app.handle( req, res ); } );
+
 };

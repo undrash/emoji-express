@@ -39,6 +39,25 @@ Installation is done using the
 $ npm install slashemoji
 ```
 
+## Routes
+
+Emoji support for `/contact`
+
+/☎️
+
+/📞
+
+/🤙
+
+Emoji support for `/about`
+
+/🙋‍♂️
+
+/🙋‍♀️
+
+/📜
+
+<br>
 
   brought you by
   
