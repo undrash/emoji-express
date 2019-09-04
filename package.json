@@ -1,6 +1,6 @@
 {
   "name": "slashemoji",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Slashemoji adds emoji support to your website's URLs.",
   "main": "index.js",
   "scripts": {
