@@ -22,3 +22,20 @@ module.exports.init = (app) => {
     app.get( "/%%F0%9F%93%9C", (req, res) => { req.url = "/about"; app.handle( req, res ); } );
 
 };
+
+
+module.exports.set = (app, emoji, route) => {
+
+    let code = '';
+
+    if ( emoji === '☎' ) {
+        code = "%E2%98%8E%EF%B8%8F"
+    } else if ( emoji === '📞' ) {
+        code = "/%F0%9F%93%9E"
+    }
+
+    if ( ! code ) return;
+
+
+    app.get( code, (req, res) => { req.url = route; app.handle( req, res ); } );
+};
