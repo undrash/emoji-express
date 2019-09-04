@@ -4,6 +4,12 @@
   
 
  Slashemoji adds emoji support to your [express](http://expressjs.com/) website's URLs. 😇
+  
+  <br>
+
+  yourwebsite.com/contact     😐
+  
+  yourwebsite.com/📞          🤩
 
 
   <br>
