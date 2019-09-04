@@ -7,10 +7,9 @@
   <br>
 
 
-  brought your by
+  brought you by
   
   <a href="https://www.boardme.app/">
-    <img style="display: block; margin: auto;" width="100px"
-      src="https://www.boardme.app/public/img/boardme-blue.svg">
+    <img style="width="100px;" src="https://www.boardme.app/public/img/boardme-blue.svg">
   </a>
 
