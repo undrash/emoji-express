@@ -6,6 +6,25 @@
  emoji-express adds emoji support to your [express](http://expressjs.com/) website's URLs. ✌️
   
   <br>
+  
+  E.g.
+  
+  `/contact` routes
+  
+  https://boardme.app/☎
+  
+  https://boardme.app/📞
+  
+  https://boardme.app/🤙
+  
+  `/pricing` routes
+  
+  https://boardme.app/💳
+
+  https://boardme.app/💵
+
+  https://boardme.app/💰
+
 
 ## Default usage
 
