@@ -7,7 +7,7 @@
   
   <br>
   
-  E.g.
+  Examples:
   
   `/contact` routes
   
