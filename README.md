@@ -1,34 +1,44 @@
 
-# Emojify your API! 👍
+# emoji-express 🚂
 
   
 
- Slashemoji adds emoji support to your [express](http://expressjs.com/) website's URLs. 😇
+ emoji-express adds emoji support to your [express](http://expressjs.com/) website's URLs. 😇
   
   <br>
 
-  yourwebsite.com/contact     😐
-  
-  yourwebsite.com/📞          🤩
-
-
-  <br>
-
+## Default usage
 
 ```js
 const express = require('express')
 const app = express()
 
-const emoji = require('slashemoji')
+const emoji = require('emoji-express')
 
-emoji.init( app )
+emoji.defaults( app )
 
-app.get('/contact', function (req, res) {
-  res.send('This is your contact page.')
-})
+// Your routes here
 
 app.listen(3000)
 ```
+
+## Custom usage
+
+```js
+const express = require('express')
+const app = express()
+
+const emoji = require('emoji-express')
+
+emoji.set( app, '📞', '/your/route/here' )
+emoji.set( app, '🍉🍌', '/any/route/you/want' )
+emoji.set( app, '🥑😂😂😂', '/any/route/you/want' )
+
+// Your routes here
+
+app.listen(3000)
+```
+
 
 ## Installation
 
@@ -39,23 +49,17 @@ Installation is done using the
 $ npm install slashemoji
 ```
 
-## Routes
+## Defaults
 
-Emoji support for `/contact`
+`/contact` /☎️ /📞 /🤙
 
-/☎️
 
-/📞
+`/about` /🙋‍♂️ /🙋‍♀️ /📜
 
-/🤙
 
-Emoji support for `/about`
+`/pricing` 💳
 
-/🙋‍♂️
 
-/🙋‍♀️
-
-/📜
 
 <br>
 

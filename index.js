@@ -1,7 +1,7 @@
 
 
 
-module.exports.init = (app) => {
+module.exports.defaults = (app) => {
 
     // ☎️
     app.get( "/%E2%98%8E%EF%B8%8F", (req, res) => { req.url = "/contact"; app.handle( req, res ); } );
