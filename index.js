@@ -49,7 +49,7 @@ module.exports.defaults = (app) => {
     app.get( "/%E2%8C%A8%EF%B8%8F", (req, res) => { req.url = "/login"; app.handle( req, res ); } );
 
     // 📜
-    app.get( "/%%F0%9F%93%9C", (req, res) => { req.url = "/terms"; app.handle( req, res ); } );
+    app.get( "/%F0%9F%93%9C", (req, res) => { req.url = "/terms"; app.handle( req, res ); } );
 
     // 🔒
     app.get( "/%F0%9F%94%92", (req, res) => { req.url = "/privacy"; app.handle( req, res ); } );
