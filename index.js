@@ -29,9 +29,13 @@ module.exports.set = (app, emoji, route) => {
     let code = '';
 
     if ( emoji === '☎' ) {
-        code = "%E2%98%8E%EF%B8%8F"
+        code = "/%E2%98%8E%EF%B8%8F"
     } else if ( emoji === '📞' ) {
         code = "/%F0%9F%93%9E"
+    } else if ( emoji === '🤙' ) {
+        code = "/%F0%9F%A4%99"
+    } else if ( emoji === '🙋‍♂️' ) {
+        code = "/%F0%9F%99%8B%E2%80%8D%E2%99%82%EF%B8%8F"
     }
 
     if ( ! code ) return;

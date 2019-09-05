@@ -1,24 +1,24 @@
 {
-  "name": "slashemoji",
-  "version": "1.0.12",
-  "description": "Slashemoji adds emoji support to your website's URLs.",
+  "name": "emoji-express",
+  "version": "1.0.0",
+  "description": "Emoji express adds emoji support to your express routes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gasparandr/slashemoji.git"
+    "url": "git+https://github.com/gasparandr/emoji-express.git"
   },
   "keywords": [
     "emoji",
-    "website",
+    "express",
     "url"
   ],
   "author": "Andrei Gaspar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gasparandr/slashemoji/issues"
+    "url": "https://github.com/gasparandr/emoji-express/issues"
   },
-  "homepage": "https://github.com/gasparandr/slashemoji#readme"
+  "homepage": "https://github.com/gasparandr/emoji-express#readme"
 }
