@@ -21,25 +21,17 @@ module.exports.init = (app) => {
     // 📜
     app.get( "/%%F0%9F%93%9C", (req, res) => { req.url = "/about"; app.handle( req, res ); } );
 
+    // 💳
+    app.get( "/%F0%9F%92%B3", (req, res) => { req.url = "/pricing"; app.handle( req, res ); } );
+
 };
 
 
 module.exports.set = (app, emoji, route) => {
 
-    let code = '';
+    let emojiRoute = encodeURI( emoji );
 
-    if ( emoji === '☎' ) {
-        code = "/%E2%98%8E%EF%B8%8F"
-    } else if ( emoji === '📞' ) {
-        code = "/%F0%9F%93%9E"
-    } else if ( emoji === '🤙' ) {
-        code = "/%F0%9F%A4%99"
-    } else if ( emoji === '🙋‍♂️' ) {
-        code = "/%F0%9F%99%8B%E2%80%8D%E2%99%82%EF%B8%8F"
-    }
+    if ( ! emojiRoute ) return;
 
-    if ( ! code ) return;
-
-
-    app.get( code, (req, res) => { req.url = route; app.handle( req, res ); } );
+    app.get( `/${ emojiRoute }`, (req, res) => { req.url = route; app.handle( req, res ); } );
 };
