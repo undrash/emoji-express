@@ -4,7 +4,7 @@
 module.exports.defaults = (app) => {
 
     // ☎️
-    app.get( "/%E2%98%8E%EF%B8%8F", (req, res) => { req.url = "/contact"; app.handle( req, res ); } );
+    app.get( "/%E2%98%8E", (req, res) => { req.url = "/contact"; app.handle( req, res ); } );
 
     // 📞
     app.get( "/%F0%9F%93%9E", (req, res) => { req.url = "/contact"; app.handle( req, res ); } );
