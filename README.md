@@ -3,7 +3,7 @@
 
   
 
- emoji-express adds emoji support to your [express](http://expressjs.com/) website's URLs. ✌️
+ `emoji-express` adds emoji support to your [express](http://expressjs.com/) website's URLs. ✌️
   
   <br>
   
