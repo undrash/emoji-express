@@ -3,7 +3,7 @@
 
   
 
- emoji-express adds emoji support to your [express](http://expressjs.com/) website's URLs. 😇
+ emoji-express adds emoji support to your [express](http://expressjs.com/) website's URLs. ✌️
   
   <br>
 
@@ -46,20 +46,38 @@ Installation is done using the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```bash
-$ npm install slashemoji
+$ npm install emoji-express
 ```
 
 ## Defaults
 
 `/contact` /☎️ /📞 /🤙
 
+`/about` /🙋‍♂️ /🙋‍♀️  
 
-`/about` /🙋‍♂️ /🙋‍♀️ /📜
+`/pricing` /💳 /💵 /💰 
 
+`/info` /💡
 
-`/pricing` 💳
+`/faq` /🤔
 
+`/home` /🏠
 
+`/profile` /👤
+
+`/settings` /⚙
+
+`/support` / 🛠️
+
+`/login` /⌨️
+
+`/terms` /📜
+
+`/privacy` /🔒
+
+`/posts` /🖊️
+
+`/subscribe` /✔️
 
 <br>
 
