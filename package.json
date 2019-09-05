@@ -1,6 +1,6 @@
 {
   "name": "emoji-express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Emoji express adds emoji support to your express routes.",
   "main": "index.js",
   "scripts": {
