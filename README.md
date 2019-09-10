@@ -11,7 +11,7 @@
   
   `/contact` routes
   
-  https://boardme.app/☎
+  https://boardme.app/📮
   
   https://boardme.app/📞
   
@@ -22,8 +22,6 @@
   https://boardme.app/💳
 
   https://boardme.app/💵
-
-  https://boardme.app/💰
 
 
 ## Default usage
@@ -70,11 +68,11 @@ $ npm install emoji-express
 
 ## Defaults
 
-`/contact` /☎️ /📞 /🤙
+`/contact` /☎ /📮 /📞 /🤙
 
 `/about` /🙋‍♂️ /🙋‍♀️  
 
-`/pricing` /💳 /💵 /💰 
+`/pricing` /💳 /💵 
 
 `/donate` /💰 
 
