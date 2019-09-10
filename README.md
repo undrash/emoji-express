@@ -76,6 +76,8 @@ $ npm install emoji-express
 
 `/pricing` /💳 /💵 /💰 
 
+`/donate` /💰 
+
 `/info` /💡
 
 `/faq` /🤔
@@ -97,6 +99,22 @@ $ npm install emoji-express
 `/posts` /🖊️
 
 `/subscribe` /✔️
+
+`/join-us` /🤗
+
+`/search` /🧐
+
+`/careers` /💼
+
+`/delivery` /🚚
+
+`/tv` /📺
+
+`/podcast` /🎙️
+
+
+
+
 
 <br>
 

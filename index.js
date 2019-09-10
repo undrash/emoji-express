@@ -12,6 +12,9 @@ module.exports.defaults = (app) => {
     // 🤙
     app.get( "/%F0%9F%A4%99", (req, res) => { req.url = "/contact"; app.handle( req, res ); } );
 
+    // 📮
+    app.get( "/%F0%9F%93%AE", (req, res) => { req.url = "/contact"; app.handle( req, res ); } );
+
     // 🙋‍♂️
     app.get( "/%F0%9F%99%8B%E2%80%8D%E2%99%82", (req, res) => { req.url = "/about"; app.handle( req, res ); } );
 
@@ -25,7 +28,7 @@ module.exports.defaults = (app) => {
     app.get( "/%F0%9F%92%B5", (req, res) => { req.url = "/pricing"; app.handle( req, res ); } );
 
     // 💰
-    app.get( "/%F0%9F%92%B0", (req, res) => { req.url = "/pricing"; app.handle( req, res ); } );
+    app.get( "/%F0%9F%92%B0", (req, res) => { req.url = "/donate"; app.handle( req, res ); } );
 
     // 💡
     app.get( "/%F0%9F%92%A1", (req, res) => { req.url = "/info"; app.handle( req, res ); } );
@@ -59,6 +62,26 @@ module.exports.defaults = (app) => {
 
     // ✔️
     app.get( "/%E2%9C%94%EF%B8%8F", (req, res) => { req.url = "/subscribe"; app.handle( req, res ); } );
+
+    // 🤗
+    app.get( "/%F0%9F%A4%97", (req, res) => { req.url = "/join-us"; app.handle( req, res ); } );
+
+    // 🧐
+    app.get( "/%F0%9F%A7%90", (req, res) => { req.url = "/search"; app.handle( req, res ); } );
+
+    // 💼
+    app.get( "/%F0%9F%92%BC", (req, res) => { req.url = "/careers"; app.handle( req, res ); } );
+
+    // 🚚
+    app.get( "/%F0%9F%9A%9A", (req, res) => { req.url = "/delivery"; app.handle( req, res ); } );
+
+    // 📺
+    app.get( "/%F0%9F%93%BA", (req, res) => { req.url = "/tv"; app.handle( req, res ); } );
+
+    // 🎙️
+    app.get( "/%F0%9F%8E%99%EF%B8%8F", (req, res) => { req.url = "/podcast"; app.handle( req, res ); } );
+
+
 };
 
 
