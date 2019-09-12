@@ -1,4 +1,5 @@
 
+const emojis = require( "./data/emojis" );
 
 
 module.exports.defaults = (app) => {
@@ -85,6 +86,7 @@ module.exports.defaults = (app) => {
 };
 
 
+
 module.exports.set = (app, emoji, route) => {
 
     let emojiRoute = encodeURI( emoji );
@@ -92,4 +94,22 @@ module.exports.set = (app, emoji, route) => {
     if ( ! emojiRoute ) return;
 
     app.get( `/${ emojiRoute }`, (req, res) => { req.url = route; app.handle( req, res ); } );
+};
+
+
+
+module.exports.translateURLs = (req, res, next) => {
+
+    let URL = req.originalUrl;
+
+    for ( let emoji of emojis ) {
+
+        URL.replace( new RegExp( emoji.URI, "g" ), emoji.name );
+    }
+
+    if ( URL !== req.originalUrl ) {
+        res.redirect( URL );
+    } else {
+        next();
+    }
 };
