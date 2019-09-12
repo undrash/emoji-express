@@ -13,18 +13,14 @@
   
   https://boardme.app/📮
   
-  https://boardme.app/📞
-  
-  https://boardme.app/🤙
-  
   `/pricing` routes
   
   https://boardme.app/💳
 
-  https://boardme.app/💵
 
 
-## Default usage
+## Default usage (static websites)
+It offers automatic emoji support for all the main routes of your website. E.g. contact, pricing, faq, etc.
 
 ```js
 const express = require('express')
@@ -39,7 +35,37 @@ emoji.defaults( app )
 app.listen(3000)
 ```
 
+
+## Translate emojis from URLs automatically
+It translates emojis automatically from URLs.
+
+Examples:
+
+https://yourwebsite.com/🦇🚶‍♂️🚣 
+
+translated: https://yourwebsite.com/batman-walking
+
+https://yourwebsite.com/🔥-in-the-🕳️
+
+translated: https://yourwebsite.com/fire-in-the-hole
+
+```js
+const express = require('express')
+const app = express()
+
+const emoji = require('emoji-express')
+
+app.use( emoji.translateURLs )
+
+// Your routes here
+
+app.listen(3000)
+```
+
+
+
 ## Custom usage
+It links any custom emojis (or strings of emojis) to any URL in your website.
 
 ```js
 const express = require('express')
