@@ -100,12 +100,15 @@ module.exports.set = (app, emoji, route) => {
 
 module.exports.translateURLs = (req, res, next) => {
 
-    let URL = req.originalUrl;
+    let URL         = req.originalUrl;
 
-    for ( let emoji of emojis ) {
+    let emojisSorted    = emojis.sort( (a, b) => ( a.URI.length < b.URI.length ) ? 1 : -1 );
 
-        URL.replace( new RegExp( emoji.URI, "g" ), emoji.name );
+    for ( let emoji of emojisSorted ) {
+
+        if ( URL.indexOf( emoji.URI ) !== -1 ) URL = URL.replace( new RegExp( emoji.URI, "g" ), emoji.name );
     }
+
 
     if ( URL !== req.originalUrl ) {
         res.redirect( URL );

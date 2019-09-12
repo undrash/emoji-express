@@ -3744,7 +3744,7 @@ module.exports = [
     {
         "emoji": "🕳",
         "name": "hole",
-        "URI": "%F0%9F%95%B3"
+        "URI": "%F0%9F%95%B3%EF%B8%8F"
     },
     {
         "emoji": "🎃",
