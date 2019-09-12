@@ -41,7 +41,7 @@ It translates emojis automatically from URLs.
 
 Examples:
 
-https://yourwebsite.com/🦇🚶‍♂️🚣 
+https://yourwebsite.com/🦇🚶‍♂️
 
 translated: https://yourwebsite.com/batman-walking
 
